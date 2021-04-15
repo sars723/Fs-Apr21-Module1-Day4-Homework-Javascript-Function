@@ -204,10 +204,11 @@ arrCapitalize=firstLetterCapital.split(" ")
 console.log(arrCapitalize.length) */
 const upperFirst=function(){
     for(let i=0;i<arrCapitalize.length;i++){
-        arrCapitalize[i][0]=arrCapitalize[i][0].toUpperCase()
-        console.log(arrCapitalize[i][0])
+        /* arrCapitalize[i][0]=arrCapitalize[i][0].toUpperCase()
+        console.log(arrCapitalize[i][0].toUpperCase()) */
+       arrCapitalize[i]=arrCapitalize[i].charAt(0).toUpperCase()+arrCapitalize[i].substring(1)
     }
-console.log(arrCapitalize)
+console.log(arrCapitalize.join(" "))
 }
 upperFirst()
 
