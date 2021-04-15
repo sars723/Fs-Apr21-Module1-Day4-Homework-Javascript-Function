@@ -197,20 +197,22 @@ console.log(" ")
 console.log("excercise 8 capitalize first letter")
 console.log("-----------------------------------")
 
-let firstLetterCapital="hello world"
-let arrCapitalize=[]
-arrCapitalize=firstLetterCapital.split(" ")
+
+
 /* console.log(arrCapitalize[0][0].toUpperCase())
 console.log(arrCapitalize.length) */
-const upperFirst=function(){
+const upperFirst=function(firstLetterCapital){
+    let arrCapitalize=[]
+    arrCapitalize=firstLetterCapital.split(" ")
     for(let i=0;i<arrCapitalize.length;i++){
         /* arrCapitalize[i][0]=arrCapitalize[i][0].toUpperCase()
         console.log(arrCapitalize[i][0].toUpperCase()) */
        arrCapitalize[i]=arrCapitalize[i].charAt(0).toUpperCase()+arrCapitalize[i].substring(1)
     }
-console.log(arrCapitalize.join(" "))
+        return arrCapitalize.join(" ")
 }
-upperFirst()
+const testUpperFirst=upperFirst("hello world")
+console.log(testUpperFirst)
 
 
 /* WRITE YOUR CODE HERE */
