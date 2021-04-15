@@ -67,7 +67,7 @@ const crazyDiff=function(num)
     }
     else
     {
-        return result
+        return -result
     }
 }
 const testCrazyDiff=crazyDiff(12)
